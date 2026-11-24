@@ -1,0 +1,114 @@
+
+.todo-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 20px;
+  background: #f5f7fb;
+}
+
+.todo-card {
+  width: 100%;
+  max-width: 650px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.todo-card h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #253047;
+}
+
+.subtitle {
+  color: #8c96a6;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.todo-form input {
+  flex: 1;
+  min-width: 0;
+}
+
+.todo-form button {
+  white-space: nowrap;
+}
+
+.task-heading {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.task-item .form-check-input {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.task-title {
+  flex: 1;
+  font-size: 14px;
+  color: #253047;
+  overflow-wrap: anywhere;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  color: #aab1bc;
+}
+
+.task-actions {
+  display: flex;
+  gap: 7px;
+}
+
+.empty-message {
+  text-align: center;
+  color: #9ba5b5;
+  padding: 25px 0;
+  font-size: 14px;
+}
+
+.task-summary {
+  margin-top: 20px;
+  color: #8c96a6;
+  font-size: 12px;
+  text-align: right;
+}
+
+@media (max-width: 480px) {
+  .todo-container {
+    padding: 30px 12px;
+  }
+
+  .todo-card {
+    padding: 20px;
+  }
+
+  .todo-form {
+    flex-wrap: wrap;
+  }
+
+  .todo-form input {
+    flex-basis: 100%;
+  }
+}
