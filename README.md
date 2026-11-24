@@ -5,7 +5,7 @@ Repository ini dibuat untuk proses lamar kerja di PT Raya Technology Integra
 ## Project Structure
 
 ```text
-technical-assessment/
+Fizzbuzz---Todolist-Aplication/
 │
 ├── fizzbuzz.js
 │
